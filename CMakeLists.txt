@@ -34,13 +34,13 @@ if(MINGW)
 endif()
 
 # Standard CMake options
-option(BUILD_SHARED_LIBS "Build as shared library" ON)
+# option(BUILD_SHARED_LIBS "Build as shared library" ON)
 
 if (NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
   set_property(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Debug;Release;RelWithDebInfo;MinSizeRel")
 endif()
 if(WIN32)
-  set(CMAKE_DEBUG_POSTFIX d CACHE STRING "Postfix for debug version of library")
+  # set(CMAKE_DEBUG_POSTFIX d CACHE STRING "Postfix for debug version of library")
 endif()
 
 # Build Options
